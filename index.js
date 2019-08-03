@@ -3,8 +3,7 @@ let fs = require('fs');
 let urls = [];
 
 let c = new Crawler({
-    proxy: 'proxy.proxycrawl.com:9000',
-    maxConnections: 300,
+    maxConnections: 99999,
     rateLimit: 1000,
     // This will be called for each crawled page
     callback: function (error, res, done) {
@@ -22,8 +21,8 @@ let c = new Crawler({
     }
 });
 
-for (let i = 1; i <= 100; i++) {
-    urls.push(`https://pmpexamforfree.com/pmp-exam-set-d-q${i}/`)
+for (let i = 62; i <= 100; i++) {
+    urls.push(`https://pmpexamforfree.com/pmp-exam-set-e-q${i}/`)
 }
 
 c.queue(urls);
