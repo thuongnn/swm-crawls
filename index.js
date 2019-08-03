@@ -21,8 +21,8 @@ let c = new Crawler({
     }
 });
 
-for (let i = 62; i <= 100; i++) {
-    urls.push(`https://pmpexamforfree.com/pmp-exam-set-e-q${i}/`)
+for (let i = 85; i <= 100; i++) {
+    urls.push(`https://pmpexamforfree.com/pmp-exam-set-g-q${i}/`)
 }
 
 c.queue(urls);
